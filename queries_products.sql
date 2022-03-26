@@ -5,14 +5,12 @@
 INSERT INTO products (name, price, can_be_returned)
 VALUES ('chair', 44.00, 'false');
 
--- Add a product to the table with the name of "stool", 
---  price of 25.99, and can_be_returned of true.
+-- Add a product to the table with the name of "stool", price of 25.99, and can_be_returned of true.
 
 INSERT INTO products (name, price, can_be_returned)
 VALUES ('stool', 25.99, 'true');
 
--- Add a product to the table with the name of "table", price of 124.00, 
---  and can_be_returned of false.
+-- Add a product to the table with the name of "table", price of 124.00, and can_be_returned of false.
 
 INSERT INTO products (name, price, can_be_returned)
 VALUES ('table', 124.00, 'false');
@@ -54,8 +52,7 @@ BETWEEN 22.50 AND 99.99;
 
 UPDATE products SET price = price - 20;
 
--- Because of the sale, everything that costs less than $25 has sold out.
-  -- Remove all products whose price meets this criteria.
+-- Because of the sale, everything that costs less than $25 has sold out. Remove all products whose price meets this criteria.
 
 DELETE FROM products WHERE price < 25;
 
